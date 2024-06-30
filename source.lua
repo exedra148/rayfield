@@ -1943,7 +1943,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 
 
 				local Success, Response = pcall(function()
-					DropdownSettings.Callback(NewOption)
+					-- DropdownSettings.Callback(NewOption)
 				end)
 				if not Success then
 					TweenService:Create(Dropdown, TweenInfo.new(0.6, Enum.EasingStyle.Quint), {BackgroundColor3 = Color3.fromRGB(85, 0, 0)}):Play()
